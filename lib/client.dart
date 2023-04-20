@@ -280,7 +280,7 @@ class _clientState extends State<client> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add User',style: TextStyle(color: Colors.white),),
+        title: Text('Add Client Details',style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.grey[900],
         automaticallyImplyLeading: false,
         centerTitle: true,

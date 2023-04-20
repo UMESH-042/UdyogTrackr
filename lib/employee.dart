@@ -183,10 +183,10 @@ void _showAddEmployeeDialog() {
       borderSide: BorderSide.none,
     ),
     filled: true,
-    fillColor: Colors.grey[200],
+    fillColor: Colors.black,
   
   ),
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.grey[200]),
           onChanged: (query) => _filterEmployees(query),
         ),
         centerTitle: true,

@@ -78,6 +78,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dbms2/balancesheet.dart';
 import 'package:flutter_dbms2/billing.dart';
 import 'package:flutter_dbms2/client.dart';
 import 'package:flutter_dbms2/employee.dart';
@@ -93,7 +94,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0; 
-  final List<Widget> _pages = [    dashboard(),    EmployeePage(),    client(),    MyGraph(),  ];
+  final List<Widget> _pages = [    dashboard(),    EmployeePage(),    client(),    MyGraph(), BalanceSheetPage(assetsTotal: 0, liabilitiesTotal: 0, equityTotal: 0) ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -125,8 +126,12 @@ class _HomePageState extends State<HomePage> {
             label: 'Clients',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
+            icon: Icon(Icons.graphic_eq),
             label: 'Graph',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Balance Sheet',
           ),
         ],
         currentIndex: _selectedIndex,

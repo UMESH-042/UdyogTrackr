@@ -9,6 +9,7 @@ class dashboard extends StatefulWidget {
 }
 
 class _dashboardState extends State<dashboard> {
+   final List<String> imageUrls = [    'https://picsum.photos/id/100/200/300',    'https://picsum.photos/id/101/200/300',    'https://picsum.photos/id/102/200/300',    'https://picsum.photos/id/103/200/300',    'https://picsum.photos/id/104/200/300',  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +36,7 @@ class _dashboardState extends State<dashboard> {
           },
         ),
       ),
+
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -67,15 +69,29 @@ class _dashboardState extends State<dashboard> {
         ),
       ),
       body: Container(
-        child: Center(
-          child: Text(
-            'Welcome to the Dashboard!',
-            style: TextStyle(
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold,
+        child:
+      ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemExtent: 200,
+        itemCount: imageUrls.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            alignment: Alignment.topCenter,
+            margin: EdgeInsets.all(8.0),
+            // padding: EdgeInsets.all(10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(8.0),
+              child: Image.network(
+               
+                imageUrls[index],
+                width: 500,
+                height: 500,
+                // fit: BoxFit.cover,
+              ),
             ),
-          ),
-        ),
+          );
+        },
+      ),
       ),
     );
   }

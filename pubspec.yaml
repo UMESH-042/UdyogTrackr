@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
+
     sdk: flutter
 
 
@@ -38,6 +39,7 @@ dependencies:
   http: ^0.13.5
   fl_chart: ^0.62.0
   charts_flutter: ^0.12.0
+  flutter_local_notifications: ^13.0.0
 
 dev_dependencies:
   flutter_test:
@@ -54,12 +56,16 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
+
 flutter:
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+  - assets/background.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
