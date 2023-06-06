@@ -1,7 +1,7 @@
 # flutter_dbms2
 
 A new Flutter project.
-All pages and features :
+<!-- All pages and features : -->
 <!-- ![WhatsApp Image 2023-06-06 at 11 32 03](https://github.com/UMESH-042/UdyogTrackr/assets/98551372/5818aef0-7f1a-4930-8a2e-a76c71a5c745)
 ![WhatsApp Image 2023-06-06 at 11 32 04](https://github.com/UMESH-042/UdyogTrackr/assets/98551372/7d9857f8-54ba-49ae-a605-04ebad36cc38)
 ![WhatsApp Image 2023-06-06 at 11 32 04 (1)](https://github.com/UMESH-042/UdyogTrackr/assets/98551372/6a03b470-e0b0-4fc2-8faa-c77c89623b1f)
